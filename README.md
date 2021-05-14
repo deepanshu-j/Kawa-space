@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Getting Started with Kawa Space Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App.
 
-## Available Scripts
+# Brief about Technologies
+   `create-react-app`\
+   `React Hooks`\
+   `useState`, `useEffect`\
+   `axios`
 
-In the project directory, you can run:
 
-### `npm start`
+# Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(All the Components are in the 'components' Folder)
+Folder Structure\
+-src\
+	  &nbsp;&nbsp;&nbsp; &nbsp;-Components\
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-Navbar\
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-Jumbotron\
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-Cards__Container\
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;-Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Page is the Main Stateful Component which Renders The other 3 Dumb Functional Components
 
-### `npm test`
+All Components are Hooks Based
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Naming Convention Used - BEM
 
-### `npm run build`
+For Styling the Components - CSS 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What this Project Does Internally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+State Variables -
+- Array - which Hold the informaation of the Cards
+- Index of the clicked Card - Intially of the First Element
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+It Fetches the Data From the API\
+Populates the Array with that Data\
+Renders that Array using map\
+Whenever User Clicks a Card, Click Handler is triggered and the Index of the Card in the State is Updated\
+And Object at that Index is Passed to The Jumbotron (The Big Card)\
+And the card with that index is Filtered by adding a different Css class so that it appears clicked and has a 'Purple' Backgorund
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Directions to run locally
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the *project directory*, you can run:
+1. You need to have the following installed (Latest Version Preferred)
+      - Node.js
+      - npm 
+      - create-react-app using npm  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Run 'npm install'
+     - To Install all the dependencies 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Run 'npm start'
+     - To Run the Project In Dev Mode  
 
-## Learn More
+4. Run 'ctrl + C' in the Command Line to stop the Node Deamon from serving the react app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## If Run into an Error during installation 
+1. Update Node and npm to latest version
+2. Try installing Cors library using npm as this Project uses External API to Fetch Data
+3. Comment Down the Error, and we will try to solve it
