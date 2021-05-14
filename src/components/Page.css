@@ -1,0 +1,16 @@
+.Card__container {
+	/* background-color: hotpink; */
+	margin: 0 60px 0 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.purple {
+	background-color: #a259ff;
+	color: white;
+}
+.normal .Card__top {
+	color: gray;
+}
+.normal .Card__bottom {
+	color: #e16259;
+}

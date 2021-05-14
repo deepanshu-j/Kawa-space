@@ -1,0 +1,51 @@
+.Jumbotron {
+	/* display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	 */
+	display: flex;
+	justify-content: center;
+
+	/* The Height of the Jumbotron is 35% with respect to vh */
+	height: 35vh;
+
+	/* This padding tells how much to the center will be the Jumbotron div */
+	padding: 5vh 0 5vh 0;
+}
+.Jumbotron__center {
+	display: flex;
+	flex: 0.8;
+	padding: 30px;
+	background-color: white;
+	border-radius: 16px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.Jumbotron__centerLeft {
+	flex: 0.2;
+	display: flex;
+	justify-content: center;
+	/* background-color: coral; */
+	/* display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%; */
+}
+
+.Jumbotron__centerLeft > img {
+	border-radius: 50%;
+}
+.Jumbotron__centerRight {
+	flex: 0.8;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	background-color: white;
+}
+.Name {
+	color: #e16259;
+	text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 55px;
+}
+.Gender {
+	color: gray;
+}

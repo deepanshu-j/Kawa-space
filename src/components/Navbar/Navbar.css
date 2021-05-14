@@ -1,0 +1,30 @@
+.Navbar {
+	display: flex;
+	margin: 0 80px 0 80px;
+	background-color: #e5e5e5;
+}
+.Navbar__left {
+	flex: 0.5;
+	background-color: #e5e5e5;
+	padding: 30px 0 0px 0;
+	font-weight: bold;
+	font-size: larger;
+}
+.Navbar__right {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 30px 0px 30px 0px;
+	flex: 0.5;
+	font-size: larger;
+}
+.Navbar__right > a {
+	padding: 0 10px 0 10px;
+}
+.Navbar__rightProduct {
+	text-decoration: underline;
+	text-decoration-color: #e16259;
+}
+
+.Navbar__right > a {
+	padding: 0 10px 0 10px;
+}

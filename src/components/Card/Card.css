@@ -1,0 +1,20 @@
+.Card {
+	/* width: 282px; */
+	width: 20vw;
+	/* height: 110px; */
+	height: 20vh;
+	background-color: white;
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 10px;
+	padding-left: 15px;
+	overflow: hidden;
+}
+
+.Card__middle {
+	font-weight: 700;
+	font-size: large;
+}

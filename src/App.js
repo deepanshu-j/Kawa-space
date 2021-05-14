@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Page from './components/Page';
+import { Component } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Jumbotron from './components/Jumbotron/Jumbotron';
+
+// (You will find all the components in the 'components' Folder)
+// Folder Structure
+// -src
+// 	 -Components
+// 		-Navbar
+// 		-Jumbotron
+// 		-Cards__Container
+// 		-Page
+
+// Naming Convention Used - BEM
+
+//All Components are Hooks Based//
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Page />
+		</div>
+	);
 }
 
 export default App;
